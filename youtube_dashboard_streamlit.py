@@ -145,7 +145,7 @@ def main() -> None:
 
     with tab1:
         # Curated videos view and basic view-count filter.
-        st.subheader("Curated videos (from mentor list)")
+        st.subheader("Curated videos")
         if df_videos.empty:
             st.warning("No curated video data found. Run the ingestion script first.")
         else:
@@ -180,7 +180,7 @@ def main() -> None:
 
     with tab3:
         # Search-enriched video results with user-selected sort.
-        st.subheader("Search results (enriched via videos.list)")
+        st.subheader("Search results")
         if df_search.empty:
             st.warning("No search enriched video data found. Run the ingestion script first.")
         else:
